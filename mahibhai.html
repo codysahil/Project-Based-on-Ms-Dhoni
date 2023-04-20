@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+        }
+    </style>
+</head>
+<body>
+<div class="flex flex-col mx-auto sm:flex-row md:grid grid-cols-3">
+<div class="mt-2 mx-1 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="w-96 h-80 rounded-t-lg" src="https://www.mykhel.com/img/2020/08/msdhoni5-1597584941.jpg" alt="" id="image" />
+    </a>
+    
+    <div class="p-5">
+        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">MS DHONI ODI MAN OF THE MATCH STATS</h5>
+       <hr>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <h6 class="mb-2 font-bold tracking-light text-gray-900 dark:text-white"><span id="country"></span></h6>
+            <span id="text" class="font-normal text-gray-700 dark:text-gray-400"></span></p>
+
+        <button type="button" onclick="showImg()" class="my-3 min-w-full grid place-items-center inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+           <span id="btnn">START</span> 
+        </button> 
+    </div>
+</div>
+<div class="mt-2 mx-1 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="w-96 h-80 rounded-t-lg" src="https://sportscafe.in/img/es3-y1/articles/cricket/Dhoni_ICCt20.jpg" alt="" id="image2" />
+    </a>
+    
+    <div class="p-5">
+        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">MS DHONI BEST T20I MOMENTS</h5>
+         <hr>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <h6 class="mb-2 font-bold tracking-light text-gray-900 dark:text-white"><span id="country2"></span></h6>
+            <span id="text2" class="font-normal text-gray-700 dark:text-gray-400"></span></p>
+
+        <button type="button" onclick="showImg2()" class="my-3 min-w-full grid place-items-center inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+           <span id="btnn2">START</span> 
+        </button> 
+    </div>
+</div>
+
+<div class="mt-2 mx-1 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <a href="#">
+        <img class="w-96 h-80 rounded-t-lg" src="https://www.mykhel.com/img/2020/08/msdhoni5-1597584941.jpg" alt="" id="image3" />
+    </a>
+    
+    <div class="p-5">
+        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">MS DHONI ODI MAN OF THE MATCH STATS</h5>
+
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <h6 class="mb-2 font-bold tracking-light text-gray-900 dark:text-white"><span id="country3"></span></h6>
+            <span id="text3" class="font-normal text-gray-700 dark:text-gray-400"></span></p>
+
+        <a href="#" onclick="showImg3()" class="my-3 min-w-full grid place-items-center inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+           <span id="btnn3">START</span> 
+        </a>
+    </div>
+</div>
+   </div>
+
+<footer class=" bg-white rounded-lg shadow mx-1 dark:bg-gray-800 sm:mx-auto">
+    <div class="w-full mx-auto container md:p-6 p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#" class="hover:underline">SAHIL™</a>. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+        <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+        </li>
+        <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+        </li>
+        
+        <li>
+            <a href="#" class="hover:underline">Contact</a>
+        </li>
+    </ul>
+    </div>
+</footer>
+
+    <script>
+        let ourImagearray = [];
+        ourImagearray.push("https://akm-img-a-in.tosshub.com/indiatoday/images/story/202004/dhoni05042020_1_0.jpeg");
+        ourImagearray.push("https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2018/10/mahendra-singh-dhoni-getty-1540985394.jpg");
+        ourImagearray.push("https://img.mensxp.com/media/content/2022/Mar/Image-1_62333ff8795ad.jpeg");
+        ourImagearray.push("https://staticg.sportskeeda.com/wp-content/uploads/2017/01/74117190-1484908525-800.jpg")
+        ourImagearray.push("https://bepulkitlamba.files.wordpress.com/2020/06/img_20200610_064857.png?w=1078")
+        ourImagearray.push("https://i.ytimg.com/vi/ScHwmiqGCkw/maxresdefault.jpg");
+        ourImagearray.push("https://staticg.sportskeeda.com/editor/2018/09/7243e-1537379962-800.jpg");
+        ourImagearray.push("http://im.rediff.com/cricket/2008/aug/24sld3.jpg");
+        ourImagearray.push("https://www.espncricinfo.com/inline/content/image/366102.jpg?alt=2");
+        ourImagearray.push("https://staticg.sportskeeda.com/editor/2019/01/fca6b-15480820775522-800.jpg")
+        ourImagearray.push("https://im.indiatimes.in/media/content/2013/Jul/dhoni-st_lucia_2009-afp_1373890576_540x540.jpg")
+        ourImagearray.push("http://im.rediff.com/cricket/2009/oct/29msd.jpg")
+        ourImagearray.push("https://crictv4u.com/wp-content/uploads/2022/08/Mirpur-101-vs-Bangladesh.jpg")
+        ourImagearray.push("https://1.bp.blogspot.com/-2beSHUMus_Q/YK9QeuSPqmI/AAAAAAAAzRA/pZo_5JVC1fE_hYQ3N5bxDyY9FHZ6fblcACNcBGAsYHQ/s884/IMG_20210527_132435.jpg")
+        ourImagearray.push("https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/138000/138019.jpg")
+        ourImagearray.push("https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/142500/142507.jpg")
+        ourImagearray.push("https://pbs.twimg.com/media/DhgWbnYX0AE09Th.jpg:large")
+        ourImagearray.push("https://smedia2.intoday.in/indiatoday/images/stories/2013january/raina_660_010313083535.jpg")
+        ourImagearray.push("https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_800,q_50/lsci/db/PICTURES/CMS/161700/161739.2.jpg")
+        ourImagearray.push("https://1.bp.blogspot.com/-M-zlgWw__qU/YL3qrfz2ckI/AAAAAAAAzq4/ydmbm7WC_-ctUSXLx3LYGuEHDzLYkyDYACNcBGAsYHQ/s480/3588749423001_4557384694001_msd92.jpg");
+        ourImagearray.push("https://data1.ibtimes.co.in/en/full/653438/ms-dhoni.jpg?h=450&l=50&t=40")
+        console.log(ourImagearray);
+        let ourTextArray = [];
+        ourTextArray.push("6 years ago, when MS Dhoni registered his first century in international cricket. The former India skipper registered the feat against Pakistan in the second ODI of the six match series.The flamboyant Dhoni smashed 15 fours and 4 sixes in his innings and he managed to play a knock of 148 runs of 123 balls, taking india's total to 356/9 in 50 overs.");
+        ourTextArray.push("16 years ago, when former India skipper MS Dhoni registered his highest ODI score. Dhoni achieved the feat against Sri Lanka on October 31, 2005 in the third ODI of the seven-match series at the Sawai Mansingh Stadium, Jaipur. Coming into bat at number three, Dhoni played a knock of 183 runs from 145 balls with the help of 15 fours and 10 sixes. His knock helped the Rahul Dravid-led side defeat Sri Lanka by six wickets.");
+        ourTextArray.push("On February 2006, Dhoni played a quickfire knock of unbeaten 72 runs from just 47 balls to help India beat Pakistan by five wickets in the third ODI at the Gaddafi Stadium in Lahore, Musharraf joined the post-match presentation and lauded Dhoni first for his excellent show with the bat and then complimented him for the hairstyle.I would first of all like to congratulate the Indian team for playing exceptionally well, and may I especially congratulate Dhoni for being the architect of the victory. And may I tell Dhoni that I saw a placard asking you to have a haircut, but if you were to take my opinion, you look good in this haircut; don’t have a haircut.");
+        ourTextArray.push("Mahendra Singh Dhoni, promoted to bat at No. 3, hamstrung and limping on one good leg for the best part of an innings of 91, helped India to an unconvincing win against Bangladesh in the first one-dayer at Dhaka. A mediocre bowling and fielding effort left India chasing 251 from 47 overs - after morning showers had shortened the match - and a lacklustre batting performance, where the best partnership of the innings was the final one, took the match to the penultimate over. A critical 107-run partnership for the sixth wicket, where Dinesh Karthik played his part admirably, ensured a result that will be welcomed in India but this performance will not do much to calm the nerves of fans still smarting from India's first-round exit in the World Cup.");
+        ourTextArray.push("MS Dhoni lifting his game when the team is in crisis has been a feature of his career, especially in ODI cricket. One example of that was there for everyone to witness in Afro-Asia tournament in the year 2007.Batting first after winning the toss, Asia XI found themselves in a spot of bother, as the half of team had returned to pavilion at just 72 runs in 16.4 overs. Dhoni came to the crease in these tough situations, and found an able ally in form of Mahela Jayawardene.Dhoni remained not out after scoring a brilliant 139 off 97 balls, powered by 15 boundaries and 5 sixes. Asia XI posted 331/8 in 50 overs.");
+        ourTextArray.push("Dhoni scored 50 from 35 and Uthappa made 30 from 18 as India continued the high-scoring trend for teams batting first in this series.Mahendra Singh Dhoni will be a relieved man.It's his first win as ODI captain and has taken four games to come by.The Man of the Match is Mahendra Singh Dhoni for his all-round performance with bat and behind the stumps.");
+        ourTextArray.push("Mahendra Singh Dhoni had come out in the mood to give the ball a thrash, sluggish pitch notwithstanding, and he succeeded. There were some streaky boundaries, but for the best part the ball boomed off the middle of the bat and there was not much Pakistan's bowlers could do. He found an excellent ally in Yuvraj Singh, who hit the ball as hard as anyone, and looked to be positive against the spinners and the quick men.Both Yuvraj and Dhoni reached the half-century mark, and with only 22 needed for victory Pakistan broke the partnership. Yuvraj (58) slog-swept Abdur Rahman, the left-arm spinner, but did not quite get hold of the ball and failed to clear Afridi in the deep. Soon after, Dhoni (63) flashed at Shoaib, who returned to the attack in the 45th over");
+        ourTextArray.push("Dhoni promoted himself ahead of Yuvraj Singh probably to ensure two left-handers didn't have to deal with the wiles of Murali.Dhoni hardly showed any effects of having kept in back-to-back matches and playing a long innings yesterday as he and Raina scampered quick singles and twos. He started out cautiously before opening out after the 30th over - four fours (including a powerful, fine paddle-sweep off Murali) and a six came in the next four overs as the required-rate dipped to manageable levels.")
+        ourTextArray.push("Once again, Dhoni walked in to bat with the Indian innings wobbling. Often he has played a lone hand, but this time Suresh Raina and Rohit Sharma offered excellent support.Dhoni was comfortable against Mendis, committing himself forward to smother the spin of the full-length deliveries, but when the length was short, he rocked back and cut and pulled for runs.Dhoni was dismissed in the 49th over, scooping to cover for a 80-ball 76 and in the end his efforts didn't got to waste.")
+        ourTextArray.push("Dhoni added 110 from just 12.2 overs to wrest the initiative. Daniel Vettori had brought about a lull in the proceedings after Ross Taylor's stunning catch to send back Sehwag, but once 40 came from the three overs of the batting Powerplay, there was no holding the Indians back.With Dhoni rotating the strike cleverly at the other end, New Zealand had no answer.Dhoni Scored 84 notout in 89 balls.")
+        ourTextArray.push("MS Dhoni and India kept their nerve on a frustrating day of rain delays to take a 2-1 series lead in St Lucia. It was still anybody's game when India needed 11 off the final over, but Dhoni slammed the second ball over deep midwicket to put the visitors on course for victory. It came down to the last over. Curiously, Chris Gayle turned to Jerome Taylor, who had a poor game, instead of Ravi Rampaul, who had bowled a pretty decent 20th over. Dhoni killed the contest in the second ball with a six over deep midwicket. He picked the slower one and used his bottom-hand to swipe it with the wind over midwicket boundary. Dhoni and Yusuf Pathan got the remaining four runs with a ball to spare.")
+        ourTextArray.push(" MS Dhoni's superb 107-ball 124 was the foundation for India's highest-ever total against Australia, a mammoth 354 for 7, and once Praveen Kumar and Ishant Sharma winkled out Australia's top three for just 45, the match was effectively over.The first five overs of the Dhoni-Raina partnership produced just 22 runs, but from the moment Dhoni slugged Siddle though cover to end the first over of the Powerplay, the wheels came off for Australia.Raina kept heaving Mitchell Johnson through midwicket, and with Dhoni slapping one straight down the ground, 18 came from the over.")
+        ourTextArray.push("The match then turned when Dhoni and Kohli collaborated. Although Dhoni emerged the top scorer with 101.Dhoni was quick to pounce on anything short and regularly rocked back to club it past midwicket. Suresh Raina joined him to finish the game comfortably with 15 balls to spare.")
+        ourTextArray.push("Twenty-eight years on from the match that transformed the history of world cricket, India recaptured the crown that Kapil Dev and his men first lifted at Lord's in 1983, and this time they did so in their very own back yard. An iron-willed 97 from Gautam Gambhir was matched for intensity by the finest captain's innings since Ricky Ponting in Johannesburg eight years ago, as MS Dhoni trumped a poetic century from Mahela Jayawardene to pull off the highest run-chase ever achieved in a World Cup final.Dhoni - who had promoted himself to No. 5 to heap extra lashings of responsibility onto his own shoulders - rushed through the gears as the victory target drew nearer. With 15 required from 17 balls, he flicked Sri Lanka's only true threat, Lasith Malinga, through midwicket for consecutive boundaries, before smoking Nuwan Kulasekara over long-on to finish on 91 not out from 79 balls, and spark the most delirious scenes of celebration ever seen on the subcontinent.")
+        ourTextArray.push("MS Dhoni marked India's homecoming with a brutal innings of 87 not out from 70 balls,Dhoni's performance was his fourth half-century in as many international innings, but whereas the last three had been insufficient to force victory, this performance was more reminiscent of his last performance in a home international - his crushing 91 not out in the World Cup final against Sri Lanka in April.")
+        ourTextArray.push("The best death-overs bowler in the game went up against the best finisher in the business with four to defend off the last ball. It was only fair that neither Lasith Malinga nor MS Dhoni ended up on the losing side of that contest. Malinga's wide full-length ball would have hoodwinked most batsmen who would have been setting themselves up for the swing to the leg side. Not the fleet-footed Dhoni, though, who calmly stretched across and carved high over the covers even as he teetered on one foot. The ball didn't have the strength to beat Sachithra Senanayake on the boundary, but Dhoni and last-man Umesh Yadav bounded through for three runs to tie a nerve-wracking classic at the Adelaide Oval.")
+        ourTextArray.push("Dhoni's innings was of two contrasting parts. He nudged and poked his way to 50 off 86 balls, hitting just two boundaries and a six.His next 63 came off just 39 balls. As the innings closed, Dhoni could barely stand. In a bid to conserve energy, Dhoni focused on hitting out and it was a blessing in disguise for India as he regularly found the gaps, helping India ransack an unlikely 81 off the last 10 overs.His stand of 125 with Ashwin was India's highest for the seventh wicket. Dhoni's march towards his century featured an array of shots on both sides of the wicket, including the helicopter shot, the pull and the squirt past gully")
+        ourTextArray.push("That India had at least 167 to defend was largely down to Dhoni, who was Man of the Match for his captaincy and his 36 off 55 balls,Dhoni immediately carted Hafeez for his third six over deep midwicket and in a later over he inflicted the blow - a flat smash - that forced the Pakistan opener down the order.Dhoni fell in the 35th over and Jadeja, because he was running out of partners, began to attack and score what he could. He hit a towering straight six off Umar Gul, and another off Ajmal over cow corner, but his riposte ended on 27. India were dismissed in the 44th over, but the wasted resources did not cost them the game.")
+        ourTextArray.push("Leave it to me, he says. I want to take this to the last over. Me against one man. One on one. I know I am better than the last man the other team can put up against me. Once again, MS Dhoni reduced a lost match into a one-on-one contest with an opposition bowler, and knocked off the 15 required in just three hits. You could see the bowler - Shaminda Eranga, 9-2-34-2 until then, wickets of Shikhar Dhawan and Virat Kohli to his name - was intimidated the moment he saw the first one fly into the top of the top tier.")
+        ourTextArray.push("Dhoni's knock was in part an answer to those who questioned both his form and his formula as a leader after India lost the T20 series and fell behind in this one. He played a steely innings to take India from a precarious 165 for 7 - founded on Ajinkya Rahane's 51- to a total they could work with, and then put on an animated display in the field to inspire his attack. India kept South Africa under pressure throughout the chase and then pushed them out of the game in the 44th over to secure a morale-boosting victory.")
+        ourTextArray.push("")
+        let ourMatchArray = [];
+        ourMatchArray.push("Match: Ind vs Pakistan, April 05, 2005");
+        ourMatchArray.push("Match: Ind vs Sri Lanka, October 31, 2005");
+        ourMatchArray.push("Match: Ind vs Pakistan, February 13, 2006");
+        ourMatchArray.push("Match: Ind vs Bangladesh, May 10, 2007");
+        ourMatchArray.push("Match: Ind vs Africa XI, June 10, 2007");
+        ourMatchArray.push("Match: Ind vs Australia, October 10, 2007");
+        ourMatchArray.push("Match: Ind vs Pakistan, November 05, 2007");
+        ourMatchArray.push("Match: Ind vs Sri Lanka, July 03, 2008");
+        ourMatchArray.push("Match: Ind vs Sri Lanka, August 24, 2008")
+        ourMatchArray.push("Match: Ind vs New Zealand, March 03, 2009");
+        ourMatchArray.push("Match: Ind vs West Indies, July 03, 2009");
+        ourMatchArray.push("Match: Ind vs Australia, October 08, 2009");
+        ourMatchArray.push("Match: Ind vs Bangladesh, January 07, 2010");
+        ourMatchArray.push("Match: Ind vs Sri Lanka, April 02, 2011");
+        ourMatchArray.push("Match: Ind vs England, October 14, 2011");
+        ourMatchArray.push("Match: Ind vs Sri Lanka, February 14, 2012");
+        ourMatchArray.push("Match: Ind vs Pakistan, December 30, 2012");
+        ourMatchArray.push("Match: Ind vs Pakistan, January 06, 2013");
+        ourMatchArray.push("Match: Ind vs Sri Lanka, July 11, 2013");
+        ourMatchArray.push("Match: Ind vs South Africa, October 14, 2015");
+        ourMatchArray.push("Match: Ind vs West Indies, June 30, 2017");
+        let x = 0;
+        function showImg(){
+            document.getElementById("image").src = ourImagearray[x];
+            document.getElementById("country").innerHTML = ourMatchArray[x];
+            document.getElementById("text").innerHTML = ourTextArray[x];
+            
+            document.getElementById("btnn").innerHTML = "Next";
+         
+            x = x+1;
+            if(x >= ourImagearray.length){
+                x = 0;
+
+            }
+        }
+        let ourImagearray2 = [];
+        ourImagearray2.push("https://1.bp.blogspot.com/-54lZI9jcaL4/Xv27yt4rSQI/AAAAAAAAps0/RtnOnjDDxBAcxK1KE8aKtEytyXI2hbr6gCNcBGAsYHQ/s1600/3588749423001_5306793328001_5306511233001-vs.jpg");
+        ourImagearray2.push("https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2019/02/10/Pictures/cricket-nzl-ind_6ca45308-2d08-11e9-b115-35431bcc9744.jpg")
+        ourImagearray2.push("https://img.cricketnmore.com/uploads/2022/02/stats-highest-totals-chases-in-t20is-between-india--sri-lanka.jpg")
+        ourImagearray.push("https://dc-cdn.s3-ap-southeast-1.amazonaws.com/b83d9e9ad2ed9895fcc7dcdaeeef0e08ba92f177-tc-img-preview.jpg")
+        ourImagearray2.push("https://www.mykhel.com/img/2018/10/dhoni4-1540636131.jpg")
+        ourImagearray2.push("https://staticg.sportskeeda.com/editor/2022/09/c5fba-16640035408036-1920.jpg")
+        let ourTextArray2 = [];
+        ourTextArray2.push("MS Dhoni scored his maiden T20I fifty during the third match of the series between India and England at M Chinnaswamy Stadium, Bengaluru on Wednesday.It is interesting that India's most successful skipper scored his maiden half-century in T20I after playing 76 matches. There is another interesting fact related to this feat, which is Dhoni scored most T20 international runs without scoring a half-century as captain.");
+        ourTextArray2.push("MS Dhoni hammered a 27-ball his fastest fifty for India in T20 international and the joint fastest fifty by an Indian batsman against South Africa in T20Is, jointly 27-ball half-century held by Shikhar Dhawan in the first T20I.")
+        ourTextArray2.push("Sri Lanka posted a heavy 206/7 after batting first and India had a tough task at hand at Chandigarh. Virender Sehwag belted a 36-ball 64 before getting out in the 11th over and India were 108/2 and they still needed 99 off the last nine overs. Dhoni and Yuvraj amassed 80 runs off seven overs as India won by six wickets with five balls to spare.Dhoni was not the highest scorer in this match with Yuvraj Singh eventually winning Man of the Match for his unbeaten 60. But the wicketkeeper-batsman held up one end as Sehwag and later Yuvraj went big guns")
+        ourTextArray2.push("India were tottering at 61/4 when 20-year-old Rohit Sharma was joined in the middle by his captain. The pair bailed India out by posting 85 runs for the fifth wicket. Dhoni scored 45 runs of 33 balls. With the effort of both these batters, India was able to reach 153/5. Momentum was with India when they came out to bowl and they made the most of it. R.P. Singh picked up four wickets while Harbhajan Singh and S. Sreesanth picked a pair each as South Africa were restricted to 116/9. And India raced to a comfortable 37 runs win.")
+        ourTextArray2.push("India were struggling for runs at 88/3 in the 12th over against Pakistan at Ahmedabad when Yuvraj Singh joined forces with Dhoni and they milked Pakistan bowling for 97 runs in the next nine overs. Dhoni scored 33 runs in 23 balls in the innings which included 4 fours. Dhoni held up one end as Yuvraj rained sixes from the other. Their 97-run partnership off just 44 balls pushed India’s total to 192/5 and Pakistan fell short by 11 runs during their chase. This innings also showcased the ability of MS Dhoni to play the role of a support cast.")
+        ourTextArray2.push("We have Dhoni’s innings against Australia in the opening World T20 at the top in the list of top 5 best innings of MS Dhoni in T20 International. This was one of the earliest signs of Dhoni’s ability to finish off the innings in the best possible manner. Yuvraj Singh fell after playing a fine knock of 70 runs off 30 balls. But MS Dhoni finished the things for India to post a respectable total. India posted 188/5. Australia almost chased down the target but Sreesanth and Harbhajan Singh squeezed the match. And India won this match by 15 runs.")
+        let ourMatchArray2 = [];
+        ourMatchArray2.push("Match: Ind vs West England, October, 2017")
+        ourMatchArray2.push("Match: Ind vs South Africa, 21st February, 2018")
+        ourMatchArray2.push("Match: Ind vs Sri Lanka, 2009")
+        ourMatchArray2.push("Match: Ind vs South Africa, 2007")
+        ourMatchArray2.push("Match: Ind vs Pakistan, 2012")
+        ourMatchArray2.push("Match: Ind vs Australia, 2007")
+        let y = 0;
+        function showImg2(){
+            document.getElementById("image2").src = ourImagearray2[y];
+            document.getElementById("country2").innerHTML = ourMatchArray2[y];
+            document.getElementById("text2").innerHTML = ourTextArray2[y];
+            
+            document.getElementById("btnn2").innerHTML = "Next";
+         
+            y = y+1;
+            if(y >= ourImagearray2.length){
+                y = 0;
+
+            }
+        }
+        function showImg3(){
+            document.getElementById("image3").src = ourImagearray[x];
+            document.getElementById("country3").innerHTML = ourMatchArray[x];
+            document.getElementById("text3").innerHTML = ourTextArray[x];
+            
+            document.getElementById("btnn3").innerHTML = "Next";
+         
+            x = x+1;
+            if(x >= ourImagearray.length){
+                x = 0;
+
+            }
+        }
+    </script>
+</body>
+</html>
